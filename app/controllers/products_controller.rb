@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :set_groups, only: [:new, :edit]
 
   # GET /products
   # GET /products.json
@@ -71,4 +72,10 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :cost, :price, :group_id)
     end
+
+    def set_groups
+      @groups = Group.all
+    end
+
+
 end
