@@ -30,4 +30,13 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  Products: "Products"
+  Name: "Name"
+  Cost: "Cost"
+  Price: "Price"
+  Group: "Group"
+  Groups: "Groups"
+  Show: "Show"
+  Edit: "Edit"
+  Destroy: "Destroy"
+  Back: "Back"

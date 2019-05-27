@@ -1,24 +1,26 @@
 <p id="notice"><%= notice %></p>
+<div class="container center">
+  <div class="jumbotron">
+    <p>
+      <strong><%= t('Name') %>:</strong>
+      <%= @product.name %>
+    </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+    <p>
+      <strong><%= t('Cost') %>:</strong>
+      <%= @product.cost %>
+    </p>
 
-<p>
-  <strong>Cost:</strong>
-  <%= @product.cost %>
-</p>
+    <p>
+      <strong><%= t('Price') %>:</strong>
+      <%= @product.price %>
+    </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
-
-<p>
-  <strong>Group:</strong>
-  <%= @product.group.name %>
-</p>
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+    <p>
+      <strong><%= t('Group') %>:</strong>
+      <%= @product.group.name %>
+    </p>
+  </div>
+  <%= link_to t('Edit'), edit_product_path(@product) %> |
+  <%= link_to t('Back'), products_path %>
+</div>
